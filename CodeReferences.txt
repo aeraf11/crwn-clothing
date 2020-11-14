@@ -1,0 +1,57 @@
+SNIPPIT 1
+
+import React from 'react';
+
+import './custom-button.styles.scss';
+
+const CustomButton = () => (
+    <div></div>
+)
+
+export default CustomButton;
+
+
+SNIPPIT 2
+import React from 'react';
+import FormInput from '../form-input/form-input.component';
+import CustomButton from '../custom-button/custom-button.component';
+
+import {auth, createUserProfileDocument } from '../../firebase/firebase.utils';
+
+import './sign-up.styles.scss';
+
+class SignUp extends React.Component{
+    constructor(){
+        super();
+    }
+}
+
+export default SignUp;
+
+
+FIREBASE CONFIG
+
+  var firebaseConfig = {
+    apiKey: "AIzaSyDkAQ2sCYPssJgAwIx2Q0lKwk4bboFCqRo",
+    authDomain: "crwn-db-29ad4.firebaseapp.com",
+    databaseURL: "https://crwn-db-29ad4.firebaseio.com",
+    projectId: "crwn-db-29ad4",
+    storageBucket: "crwn-db-29ad4.appspot.com",
+    messagingSenderId: "265704953826",
+    appId: "1:265704953826:web:71459e875fcff1dd6b8bbb",
+    measurementId: "G-DLH005QBDC"
+  };
+
+
+Project
+project-265704953826
+
+Firestore:
+
+firestore collection('users').doc('coMMAkHD2NigRkWIQY9z').collection('cartItems').doc('JMosutr5AEFPjmBZmKmn') // perticular cart item.
+firestore collection('/users/coMMAkHD2NigRkWIQY9z/cartItems/JMosutr5AEFPjmBZmKmn') // perticular cart item
+firestore collection('/users/coMMAkHD2NigRkWIQY9z/cartItems') // list of cart items
+
+From Auth Rules:
+: if
+          request.time < timestamp.date(2020, 12, 13);
