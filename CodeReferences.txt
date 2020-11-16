@@ -55,3 +55,7 @@ firestore collection('/users/coMMAkHD2NigRkWIQY9z/cartItems') // list of cart it
 From Auth Rules:
 : if
           request.time < timestamp.date(2020, 12, 13);
+
+
+Stripe email : aeraf111@gmail.com
+Password: Y@h00ioo00
